@@ -9,6 +9,8 @@ nav {
   }
 
   .navLink, .navSignUp {
+    background-color: @replateblue;
+    transition: background-color .2s ease;
     padding: 0 2%;
     color: white;
     align-self: stretch;
@@ -16,7 +18,10 @@ nav {
     align-items: center;
     text-decoration: none;
     font-family: Helvetica;
-    font-weight: bold;
+  }
+
+  .navLink:hover {
+    background-color: @replateorange;
   }
 
   .navSignUp {

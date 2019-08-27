@@ -147,6 +147,8 @@ nav .logoLink {
 }
 nav .navLink,
 nav .navSignUp {
+  background-color: #1F5C70;
+  transition: background-color 0.2s ease;
   padding: 0 2%;
   color: white;
   align-self: stretch;
@@ -154,7 +156,9 @@ nav .navSignUp {
   align-items: center;
   text-decoration: none;
   font-family: Helvetica;
-  font-weight: bold;
+}
+nav .navLink:hover {
+  background-color: #FBA01D;
 }
 nav .navSignUp {
   background-color: #FBA01D;
@@ -162,21 +166,139 @@ nav .navSignUp {
 nav .logo {
   width: 7rem;
 }
-header {
+.headerContainer {
   height: 100vh;
-  background-image: url("../images/trash-food.jpg");
+  background-image: url("/images/trash-food.jpg");
+  background-size: cover;
+  background-position: right;
+  overflow: auto;
+  postion: relative;
+}
+.headerContainer .headerLogo {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerContainer .headerLogo img {
+  width: 50%;
 }
 .postHeader {
-  height: 468px;
+  height: 50vh;
   background-color: #FBA01D;
   background-image: url("../images/iphoneMockUp.jpg");
   background-repeat: no-repeat;
-  background-position: center right;
-  background-size: 52%;
+  background-position: 90% 50%;
+  background-size: 45%;
+  padding: 3% 0;
+  margin: 0;
+  padding: 0 2%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-.postHeader .flexBoxFunc (flex-start, center) .left {
+.postHeader .postHeaderContent {
   width: 50%;
-  border: 1px solid black;
+  font-family: hatch, serif;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.postHeader .postHeaderContent img {
+  width: 80%;
+  margin-bottom: 2rem;
+}
+.postHeader .postHeaderContent h2 {
+  width: 80%;
+}
+.foodData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1% 2%;
+}
+.foodData .twoColContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #1F5C70;
+  width: 50%;
+}
+.foodData .twoColContent .replateLogo {
+  width: 35%;
+  margin: 5% 0;
+}
+.foodData .twoColContent .usGraphic {
+  width: 100%;
+  justify-content: flex-end;
+}
+.foodData .twoColContent span {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 4rem;
+  line-height: 5rem;
+  font-weight: bold;
+}
+.foodData .twoColContent .twoColRuler {
+  border-top: 1px solid #1F5C70;
+  width: 100%;
+  margin: 5% 0;
+}
+.foodData .twoColContent .figures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.foodData .twoColContent .figures .dataFigure {
+  padding: 0 1%;
+  max-width: 10%;
+  flex-shrink: 1;
+  margin: 5% 0;
+}
+.foodData .twoColContent p {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #1F5C70;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.foodFacts {
+  margin: 0%;
+  padding: 3% 2%;
+  background-color: #1F5C70;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2%;
+}
+.foodFacts .foodWaste {
+  grid-column: 0.33333333;
+  grid-row: 1;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border: solid yellow;
+}
+.foodFacts .foodGraph {
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+}
+.foodFacts .foodFacts {
+  grid-column: 2;
+  grid-row: 2;
+}
+.foodFacts .foodFacts ul li {
+  list-style: disc;
 }
 footer {
   background-color: #1F5C70;
