@@ -4,8 +4,13 @@ nav {
   .flexBoxFunc (flex-end, center);
   padding: 0 5%;
   color: white;
+
   .logoLink {
     margin-right: auto;
+
+    @media @mobile {
+      margin: 0 auto;
+    }
   }
 
   .navLink, .navSignUp {
@@ -18,6 +23,10 @@ nav {
     align-items: center;
     text-decoration: none;
     font-family: Helvetica;
+
+    @media @mobile {
+      display: none;
+    }
   }
 
   .navLink:hover {
