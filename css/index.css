@@ -215,7 +215,7 @@ nav .logo {
   width: 50%;
 }
 .postHeader {
-  height: 60vh;
+  min-height: 40vh;
   background-color: #FBA01D;
   background-image: url("../images/iphoneMockUp.jpg");
   background-repeat: no-repeat;
@@ -251,6 +251,7 @@ nav .logo {
   align-items: center;
   margin: 0;
   padding: 1% 2%;
+  min-height: 40vh;
 }
 @media (max-width: 500px) {
   .foodData {
@@ -327,7 +328,7 @@ nav .logo {
 @media (max-width: 500px) {
   .foodFacts {
     flex-direction: column;
-    min-height: 80vh;
+    min-height: 60vh;
   }
 }
 .foodFacts .twoColSectionHeader {
@@ -439,7 +440,7 @@ nav .logo {
   border-radius: 1rem;
   width: 100%;
   padding: 8% 1%;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
@@ -460,11 +461,21 @@ nav .logo {
   align-items: center;
   flex-flow: row nowrap;
 }
+@media (max-width: 500px) {
+  .download {
+    flex-flow: column wrap;
+  }
+}
 .download .leftCol {
   width: 50%;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .download .leftCol {
+    width: 100%;
+  }
 }
 .download .leftCol .replateLogo {
   width: 80%;
@@ -507,6 +518,12 @@ nav .logo {
 }
 .download .rightCol img {
   max-width: 100%;
+}
+@media (max-width: 500px) {
+  .download .rightCol {
+    width: 80%;
+    padding-top: 5%;
+  }
 }
 footer {
   background-color: #1F5C70;
