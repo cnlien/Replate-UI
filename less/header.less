@@ -1,0 +1,48 @@
+.headerContainer {
+  height: 100vh;
+  background-image: url("../images/trash-food.jpg");
+  background-size: cover;
+  background-position: right;
+  overflow: auto;
+  postion: relative;
+
+  .headerLogo{
+    height: 95vh;
+    .flexBoxFunc (center, center);
+
+    img {
+      width: 50%;
+    }
+  }
+}
+
+
+.postHeader {
+min-height: 40vh;
+background-color: @replateorange;
+background-image: url("../images/iphoneMockUp.jpg");
+background-repeat: no-repeat;
+background-position: 90% 50%;
+background-size: 45%;
+padding: 3% 0;
+.contentContainer (0, 0 2%);
+.flexBoxFunc (flex-start, center);
+
+.postHeaderContent {
+  width: 50%;
+  font-family: @hatch;
+  color: white;
+  text-align: center;
+  .flexBoxFunc (center, center);
+  flex-direction: column;
+
+  img {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    width: 80%;
+  }
+}
+}

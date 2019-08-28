@@ -1,0 +1,43 @@
+nav {
+  height: 80px;
+  background: @replateblue;
+  .flexBoxFunc (flex-end, center);
+  padding: 0 5%;
+  color: white;
+
+  .logoLink {
+    margin-right: auto;
+
+    @media @mobile {
+      margin: 0 auto;
+    }
+  }
+
+  .navLink, .navSignUp {
+    background-color: @replateblue;
+    transition: background-color .2s ease;
+    padding: 0 2%;
+    color: white;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: Helvetica;
+
+    @media @mobile {
+      display: none;
+    }
+  }
+
+  .navLink:hover {
+    background-color: @replateorange;
+  }
+
+  .navSignUp {
+    background-color: @replateorange;
+  }
+
+  .logo {
+    width: 7rem;
+  }
+}
