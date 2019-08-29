@@ -245,7 +245,7 @@ nav {
     text-align: center;
   }
 }
-@media (min-width:700px) {
+@media (max-width:800px) {
   .second {
     padding-right: 15rem;
   }
@@ -294,7 +294,7 @@ nav {
     margin-right: 30px;
   }
 }
-@media (min-width:700px) {
+@media (max-width:800px) {
 }
 #replateColor {
   max-width: 100%;
@@ -318,7 +318,7 @@ nav {
     width: 2rem;
   }
 }
-@media (min-width:700px) {
+@media (max-width:800px) {
   #littleHumans img {
     width: 4rem;
   }
@@ -350,7 +350,7 @@ nav {
     padding-right: 5rem;
   }
 }
-@media (min-width:700px) {
+@media (max-width:800px) {
   .firstSecond {
     padding-right: 5rem;
   }
@@ -377,7 +377,7 @@ nav {
     height: 10rem;
   }
 }
-@media (min-width:700px) {
+@media (max-width:800px) {
   #FSCL {
     width: 40rem;
     height: 20rem;
@@ -413,7 +413,7 @@ nav {
     color: white;
   }
 }
-@media (min-width:700px) {
+@media (max-width:800px) {
   .third {
     padding-right: 1rem;
   }
@@ -469,7 +469,7 @@ nav {
     font-size: 12px;
   }
 }
-@media (min-width:700px) {
+@media (max-width:800px) {
   #thirdImages p {
     padding-left: 2rem;
   }
@@ -579,7 +579,7 @@ nav {
     margin-left: 1rem;
   }
 }
-@media (min-width:700px) {
+@media (max-width:800px) {
   #volunteer {
     margin-left: 5rem;
   }
@@ -645,7 +645,7 @@ nav {
     margin-left: 1rem;
   }
 }
-@media (min-width:700px) {
+@media (max-width:800px) {
   #nonp {
     margin-left: 5rem;
   }
@@ -706,6 +706,11 @@ nav {
 #rpf {
   display: block;
   margin-top: 30px;
+}
+@media (max-width:800px) {
+  #rpf {
+    height: 55rem;
+  }
 }
 #rpf #logo {
   width: 35rem;
@@ -779,7 +784,6 @@ nav {
   height: 5rem;
 }
 .sthird {
-  border: 2px solid black;
   background: white;
   max-width: 100%;
   width: 100%;
@@ -787,7 +791,6 @@ nav {
   align-items: center;
 }
 .sthird .boxes {
-  border: 2px solid black;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
