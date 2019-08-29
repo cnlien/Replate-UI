@@ -154,7 +154,7 @@ h4 {
   text-transform: uppercase;
 }
 nav {
-  height: 80px;
+  height: 10vh;
   background: #1F5C70;
   display: flex;
   justify-content: flex-end;
@@ -174,13 +174,15 @@ nav .navLink,
 nav .navSignUp {
   background-color: #1F5C70;
   transition: background-color 0.2s ease;
-  padding: 0 2%;
   color: white;
+  padding: 0 2%;
+  margin: 0 0.5%;
   align-self: stretch;
   display: flex;
   align-items: center;
   text-decoration: none;
   font-family: Helvetica;
+  font-size: 0.9rem;
 }
 @media (max-width: 500px) {
   nav .navLink,
@@ -215,7 +217,7 @@ nav .logo {
   width: 50%;
 }
 .postHeader {
-  height: 60vh;
+  min-height: 50vh;
   background-color: #FBA01D;
   background-image: url("../images/iphoneMockUp.jpg");
   background-repeat: no-repeat;
@@ -251,6 +253,7 @@ nav .logo {
   align-items: center;
   margin: 0;
   padding: 1% 2%;
+  min-height: 40vh;
 }
 @media (max-width: 500px) {
   .foodData {
@@ -327,7 +330,7 @@ nav .logo {
 @media (max-width: 500px) {
   .foodFacts {
     flex-direction: column;
-    min-height: 80vh;
+    min-height: 60vh;
   }
 }
 .foodFacts .twoColSectionHeader {
@@ -366,7 +369,7 @@ nav .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 7% 0 15% 0;
+  padding: 7% 0 7% 0;
   flex-direction: column;
   text-align: center;
 }
@@ -439,7 +442,7 @@ nav .logo {
   border-radius: 1rem;
   width: 100%;
   padding: 8% 1%;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
@@ -460,11 +463,21 @@ nav .logo {
   align-items: center;
   flex-flow: row nowrap;
 }
+@media (max-width: 500px) {
+  .download {
+    flex-flow: column wrap;
+  }
+}
 .download .leftCol {
   width: 50%;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .download .leftCol {
+    width: 100%;
+  }
 }
 .download .leftCol .replateLogo {
   width: 80%;
@@ -507,6 +520,12 @@ nav .logo {
 }
 .download .rightCol img {
   max-width: 100%;
+}
+@media (max-width: 500px) {
+  .download .rightCol {
+    width: 80%;
+    padding-top: 5%;
+  }
 }
 footer {
   background-color: #1F5C70;

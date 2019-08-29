@@ -2,6 +2,7 @@
 .foodData {
   .flexBoxFunc (center, center);
   .contentContainer (0, 1% 2%);
+  min-height: 40vh;
 
   @media @mobile {
     flex-direction: column;
@@ -79,7 +80,7 @@
 
   @media @mobile {
     flex-direction: column;
-    min-height: 80vh;
+    min-height: 60vh;
   }
 
   .twoColSectionHeader {
@@ -119,7 +120,7 @@
 .joinTheFight {
   .contentContainer (0%, 3% 2%);
   .flexBoxFunc(center,center);
-  padding: 7% 0 15% 0;
+  padding: 7% 0 7% 0;
   flex-direction: column;
   text-align: center;
 
@@ -190,7 +191,7 @@
           border-radius: 1rem;
           width: 100%;
           padding: 8% 1%;
-          font-size: .8rem;
+          font-size: 1rem;
           font-weight: bold;
           transition: background-color .3s ease;
 
@@ -211,12 +212,18 @@
   padding-top: 5%;
   .flexBoxFunc (center,center);
   flex-flow: row nowrap;
+  @media @mobile {
+    flex-flow: column wrap;
+  }
 
   .leftCol {
     width: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    @media @mobile {
+      width: 100%;
+    }
 
     .replateLogo {
       width:80%;
@@ -261,5 +268,10 @@
   .rightCol {
     width: 50%;
     img {max-width: 100%;}
+
+    @media @mobile {
+      width: 80%;
+      padding-top: 5%;
+    }
   }
 }
