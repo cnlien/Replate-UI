@@ -1,5 +1,5 @@
 nav {
-  height: 80px;
+  height: 10vh;
   background: @replateblue;
   .flexBoxFunc (flex-end, center);
   padding: 0 5%;
@@ -16,13 +16,15 @@ nav {
   .navLink, .navSignUp {
     background-color: @replateblue;
     transition: background-color .2s ease;
-    padding: 0 2%;
     color: white;
+    padding: 0 2%;
+    margin: 0 .5%;
     align-self: stretch;
     display: flex;
     align-items: center;
     text-decoration: none;
     font-family: Helvetica;
+    font-size: .9rem;
 
     @media @mobile {
       display: none;

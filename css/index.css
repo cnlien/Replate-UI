@@ -154,7 +154,7 @@ h4 {
   text-transform: uppercase;
 }
 nav {
-  height: 80px;
+  height: 10vh;
   background: #1F5C70;
   display: flex;
   justify-content: flex-end;
@@ -174,13 +174,15 @@ nav .navLink,
 nav .navSignUp {
   background-color: #1F5C70;
   transition: background-color 0.2s ease;
-  padding: 0 2%;
   color: white;
+  padding: 0 2%;
+  margin: 0 0.5%;
   align-self: stretch;
   display: flex;
   align-items: center;
   text-decoration: none;
   font-family: Helvetica;
+  font-size: 0.9rem;
 }
 @media (max-width: 500px) {
   nav .navLink,
@@ -215,7 +217,7 @@ nav .logo {
   width: 50%;
 }
 .postHeader {
-  min-height: 40vh;
+  min-height: 50vh;
   background-color: #FBA01D;
   background-image: url("../images/iphoneMockUp.jpg");
   background-repeat: no-repeat;
@@ -367,7 +369,7 @@ nav .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 7% 0 15% 0;
+  padding: 7% 0 7% 0;
   flex-direction: column;
   text-align: center;
 }
