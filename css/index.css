@@ -778,3 +778,58 @@ nav {
   width: 100%;
   height: 5rem;
 }
+.sthird {
+  background: white;
+  max-width: 100%;
+  width: 100%;
+  height: 55rem;
+  align-items: center;
+}
+.sthird #boxes {
+  display: flex;
+}
+.sthird h2 {
+  color: #1F5C70;
+  text-align: center;
+  font-size: 1.7vw;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.sthird #logo {
+  height: 7rem;
+}
+.sthird #person {
+  display: block;
+  border: 1px solid #1F5C70;
+  height: 30rem;
+  width: 20rem;
+  border-radius: 8px;
+}
+.sthird #person #photo {
+  height: 14rem;
+  width: 14rem;
+  border-radius: 100%;
+  margin-left: 3rem;
+}
+.sthird #person #profiles {
+  margin-left: 8rem;
+  margin-right: 6rem;
+}
+.sthird #person #profiles img {
+  width: 2rem;
+  height: 3rem;
+}
+.sthird #person p {
+  color: #1F5C70;
+  margin-left: 5rem;
+  margin-right: 3rem;
+}
+.sthird #person #tools {
+  margin-left: 4.5rem;
+  margin-right: 4rem;
+}
+.sthird #person #tools img {
+  width: 2rem;
+  height: 3rem;
+  margin-left: 0.5rem;
+}
