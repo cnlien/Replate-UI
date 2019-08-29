@@ -779,14 +779,21 @@ nav {
   height: 5rem;
 }
 .sthird {
+  border: 2px solid black;
   background: white;
   max-width: 100%;
   width: 100%;
-  height: 55rem;
+  height: 120rem;
   align-items: center;
 }
-.sthird #boxes {
+.sthird .boxes {
+  border: 2px solid black;
   display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 10rem;
+  padding-left: 10rem;
 }
 .sthird h2 {
   color: #1F5C70;
@@ -798,37 +805,85 @@ nav {
 .sthird #logo {
   height: 7rem;
 }
-.sthird #person {
+.sthird #person,
+.sthird #person1,
+.sthird #person2,
+.sthird #person3,
+.sthird #person4,
+.sthird #person5,
+.sthird #person6 {
   display: block;
   border: 1px solid #1F5C70;
   height: 30rem;
-  width: 20rem;
+  width: 25rem;
   border-radius: 8px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
 }
-.sthird #person #photo {
+.sthird #person #photo,
+.sthird #person1 #photo,
+.sthird #person2 #photo,
+.sthird #person3 #photo,
+.sthird #person4 #photo,
+.sthird #person5 #photo,
+.sthird #person6 #photo {
   height: 14rem;
   width: 14rem;
   border-radius: 100%;
-  margin-left: 3rem;
-}
-.sthird #person #profiles {
-  margin-left: 8rem;
-  margin-right: 6rem;
-}
-.sthird #person #profiles img {
-  width: 2rem;
-  height: 3rem;
-}
-.sthird #person p {
-  color: #1F5C70;
   margin-left: 5rem;
   margin-right: 3rem;
 }
-.sthird #person #tools {
-  margin-left: 4.5rem;
-  margin-right: 4rem;
+.sthird #person #profiles,
+.sthird #person1 #profiles,
+.sthird #person2 #profiles,
+.sthird #person3 #profiles,
+.sthird #person4 #profiles,
+.sthird #person5 #profiles,
+.sthird #person6 #profiles {
+  justify-content: center;
+  display: flex;
 }
-.sthird #person #tools img {
+.sthird #person #profiles img,
+.sthird #person1 #profiles img,
+.sthird #person2 #profiles img,
+.sthird #person3 #profiles img,
+.sthird #person4 #profiles img,
+.sthird #person5 #profiles img,
+.sthird #person6 #profiles img {
+  width: 2rem;
+  height: 3rem;
+}
+.sthird #person p,
+.sthird #person1 p,
+.sthird #person2 p,
+.sthird #person3 p,
+.sthird #person4 p,
+.sthird #person5 p,
+.sthird #person6 p {
+  display: flex;
+  justify-content: center;
+  color: #1F5C70;
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
+.sthird #person #tools,
+.sthird #person1 #tools,
+.sthird #person2 #tools,
+.sthird #person3 #tools,
+.sthird #person4 #tools,
+.sthird #person5 #tools,
+.sthird #person6 #tools {
+  display: flex;
+  justify-content: center;
+}
+.sthird #person #tools img,
+.sthird #person1 #tools img,
+.sthird #person2 #tools img,
+.sthird #person3 #tools img,
+.sthird #person4 #tools img,
+.sthird #person5 #tools img,
+.sthird #person6 #tools img {
   width: 2rem;
   height: 3rem;
   margin-left: 0.5rem;
