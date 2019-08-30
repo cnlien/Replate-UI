@@ -1,64 +1,45 @@
-.header{
-  background-color: @mainblue;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 100%;
-  width: 100%;
-  margin: 0 auto;
-}
-#replate1{
-  width: 10rem;
-}
-
-
-header{
- justify-content: flex-start;
- padding-bottom:15px;
- margin-left: 50px;
- margin-top: 10px;
- color: white;
-
-}
-
-
-#sign {
-
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: bolder;
-    justify-content: flex-end;
-    padding: 37px;
-    @media @phone{
-      padding: 15px;
-    
-    }
-
-    //border: 2px solid black;
-    margin-right: 10px;
-    margin-left: 10px;
-    background-color: @mainOrange;
-
-
-
-}
-a{
-  font-family: @mainFont;
-}
-#nav{
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  font-weight: bolder;
-  justify-content: flex-end;
-  padding: 20px;
-  font-family:@mainFont;
-  //border: 2px solid black;
-}
-
 nav {
-  padding-bottom:15px;
-  margin-left: 50px;
-  margin-top: 20px;
+  height: 10vh;
+  background: @replateblue;
+  .flexBoxFunc (flex-end, center);
+  padding: 0 5%;
+  color: white;
+
+  .logoLink {
+    margin-right: auto;
+
+    @media @mobile {
+      margin: 0 auto;
+    }
+  }
+
+  .navLink, .navSignUp {
+    background-color: @replateblue;
+    transition: background-color .2s ease;
+    color: white;
+    padding: 0 2%;
+    margin: 0 .5%;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: .9rem;
+
+    @media @mobile {
+      display: none;
+    }
+  }
+
+  .navLink:hover {
+    background-color: @replateorange;
+  }
+
+  .navSignUp {
+    background-color: @replateorange;
+  }
+
+  .logo {
+    width: 7rem;
+  }
 }
