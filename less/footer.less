@@ -5,4 +5,69 @@ footer {
   padding-top: 5%;
   color: white;
   font-family: @helvetica;
+  .contentContainer (0%, 3% 2%);
+
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 31% 22% 22% 22%;
+    grid-column-gap: 1%;
+
+    .footerCol {
+      padding-left: 10%;
+      text-align: left;
+      //border-left: solid thin @replategrey;
+
+      h1 {
+        font-size: 1.25rem;
+        margin-bottom: 5%;
+      }
+
+      h2 {
+        font-family: @hatch;
+        font-style: normal;
+        font-size: 1.5vw;
+      }
+
+      h3 {
+        font-family: @helvetica;
+        font-style: normal;
+        text-transform: none;
+        font-weight: normal;
+        font-size: .9rem;
+        line-height: 1.5rem;
+
+        a {
+          color:white;
+          text-decoration:none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+      }
+
+      .lambdaIcon {
+        width: 25%;
+        margin-top: 15%;
+      }
+
+      .replateLogo {
+        width: 40%;
+        margin-bottom: 5%;
+      }
+
+      .appStoreLogo {
+        width: 40%;
+        margin-top: 5%;
+      }
+    }
+  }
+
+  .footerMobileIcons {
+    display: flex;
+    .replateLogo {
+      width: 60%;
+    }
+
+  }
 }

@@ -534,4 +534,57 @@ footer {
   padding-top: 5%;
   color: white;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0%;
+  padding: 3% 2%;
+}
+footer .footerContainer {
+  display: grid;
+  grid-template-columns: 31% 22% 22% 22%;
+  grid-column-gap: 1%;
+}
+footer .footerContainer .footerCol {
+  padding-left: 10%;
+  text-align: left;
+}
+footer .footerContainer .footerCol h1 {
+  font-size: 1.25rem;
+  margin-bottom: 5%;
+}
+footer .footerContainer .footerCol h2 {
+  font-family: hatch, serif;
+  font-style: normal;
+  font-size: 1.5vw;
+}
+footer .footerContainer .footerCol h3 {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+footer .footerContainer .footerCol h3 a {
+  color: white;
+  text-decoration: none;
+}
+footer .footerContainer .footerCol h3 a:hover {
+  text-decoration: underline;
+}
+footer .footerContainer .footerCol .lambdaIcon {
+  width: 25%;
+  margin-top: 15%;
+}
+footer .footerContainer .footerCol .replateLogo {
+  width: 40%;
+  margin-bottom: 5%;
+}
+footer .footerContainer .footerCol .appStoreLogo {
+  width: 40%;
+  margin-top: 5%;
+}
+footer .footerMobileIcons {
+  display: flex;
+}
+footer .footerMobileIcons .replateLogo {
+  width: 60%;
 }
