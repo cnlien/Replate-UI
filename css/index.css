@@ -223,15 +223,20 @@ nav {
   max-width: 100%;
   width: 100%;
 }
+@media (max-width:500px) {
+  .starter {
+    height: 30rem;
+  }
+}
 .second {
   display: flex;
   justify-content: flex-end;
   padding-right: 30rem;
   background-color: white;
   height: 55rem;
+  max-width: 100%;
   width: 100%;
   text-align: center;
-  max-width: 100%;
 }
 @media (max-width:500px) {
   .second {
@@ -243,11 +248,6 @@ nav {
     height: 45rem;
     width: 100%;
     text-align: center;
-  }
-}
-@media (max-width:800px) {
-  .second {
-    padding-right: 15rem;
   }
 }
 .second p {
@@ -294,8 +294,6 @@ nav {
     margin-right: 30px;
   }
 }
-@media (max-width:800px) {
-}
 #replateColor {
   max-width: 100%;
   width: 15rem;
@@ -318,44 +316,33 @@ nav {
     width: 2rem;
   }
 }
-@media (max-width:800px) {
-  #littleHumans img {
-    width: 4rem;
-  }
-}
 #littleHumans h6 {
   color: #1F5C70;
 }
 .firstSecond {
   background-color: #FBA01D;
   display: flex;
-  padding-right: 30rem;
+  flex-flow: row wrap;
   height: 55rem;
   max-width: 100%;
   width: 100%;
   text-align: center;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 15rem;
-  padding-left: 18rem;
 }
 @media (max-width:500px) {
   .firstSecond {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 8rem;
     height: 30rem;
-    max-width: 100%;
-    width: 100%;
-    text-align: center;
-    padding-top: 5rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
-@media (max-width:800px) {
-  .firstSecond {
-    padding-right: 5rem;
   }
 }
 .firstSecond #iphone {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   width: 40rem;
   height: 30rem;
 }
@@ -373,18 +360,26 @@ nav {
 }
 @media (max-width:500px) {
   #FSCL {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
     width: 20rem;
     height: 10rem;
-  }
-}
-@media (max-width:800px) {
-  #FSCL {
-    width: 40rem;
-    height: 20rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
   }
 }
 #fsd {
-  display: block;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+@media (max-width:500px) {
+  #fsd {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
 }
 #fsd P {
   color: white;
@@ -413,7 +408,7 @@ nav {
     color: white;
   }
 }
-@media (max-width:800px) {
+@media (max-width:1100px) {
   .third {
     padding-right: 1rem;
   }
@@ -469,7 +464,7 @@ nav {
     font-size: 12px;
   }
 }
-@media (max-width:800px) {
+@media (max-width:1100px) {
   #thirdImages p {
     padding-left: 2rem;
   }
@@ -495,9 +490,10 @@ nav {
 }
 #boxes {
   display: flex;
-  padding-top: 5rem;
-  padding-right: 10rem;
-  padding-left: 15rem;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3rem;
 }
 @media (max-width:500px) {
   #boxes {
@@ -514,6 +510,7 @@ nav {
   border: 3px solid #1F5C70;
   border-radius: 12px;
   display: block;
+  justify-content: center;
 }
 @media (max-width:500px) {
   #bus {
@@ -550,9 +547,11 @@ nav {
   width: 20rem;
   height: 3rem;
   font-size: 16px;
+  display: flex;
+  justify-content: center;
   padding-top: 0.8rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-right: 2rem;
+  margin-left: 4rem;
   border-radius: 10px;
 }
 @media (max-width:500px) {
@@ -577,11 +576,6 @@ nav {
     width: 15rem;
     height: 15rem;
     margin-left: 1rem;
-  }
-}
-@media (max-width:800px) {
-  #volunteer {
-    margin-left: 5rem;
   }
 }
 #volunteer h3 {
@@ -614,10 +608,12 @@ nav {
   width: 20rem;
   height: 3rem;
   font-size: 16px;
-  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.8rem;
   margin-right: 2rem;
-  margin-left: 2rem;
-  padding-top: 8px;
+  margin-left: 4.5rem;
+  margin-top: 1.5rem;
   border-radius: 10px;
 }
 @media (max-width:500px) {
@@ -635,7 +631,6 @@ nav {
   background: #FFFFFF;
   border: 3px solid #1F5C70;
   border-radius: 12px;
-  margin-left: 20rem;
   display: block;
 }
 @media (max-width:500px) {
@@ -643,11 +638,6 @@ nav {
     width: 15rem;
     height: 15rem;
     margin-left: 1rem;
-  }
-}
-@media (max-width:800px) {
-  #nonp {
-    margin-left: 5rem;
   }
 }
 #nonp h3 {
@@ -680,10 +670,12 @@ nav {
   width: 20rem;
   height: 3rem;
   font-size: 16px;
-  padding-top: 7px;
-  margin-top: 1.5rem;
-  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.8rem;
   margin-right: 2rem;
+  margin-left: 5rem;
+  margin-top: 1.5rem;
   border-radius: 10px;
 }
 @media (max-width:500px) {
@@ -706,11 +698,6 @@ nav {
 #rpf {
   display: block;
   margin-top: 30px;
-}
-@media (max-width:800px) {
-  #rpf {
-    height: 55rem;
-  }
 }
 #rpf #logo {
   width: 35rem;
@@ -789,6 +776,16 @@ nav {
   width: 100%;
   height: 120rem;
   align-items: center;
+}
+@media (max-width:500px) {
+  .sthird {
+    height: 240rem;
+  }
+}
+@media (max-width:1100px) {
+  .sthird {
+    height: 150rem;
+  }
 }
 .sthird .boxes {
   display: flex;
